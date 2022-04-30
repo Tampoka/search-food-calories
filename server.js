@@ -47,7 +47,7 @@ app.get('/api/food', (req, res) => {
                         e.fat_g = e.fat_g || 0.0;
                         e.fat_g = parseFloat((
                             parseFloat(e.fat_g, 10) + parseFloat(entry[idx], 10)
-                        ).toFixed(2), 10);
+                        ).toFixed(2), 10)
                     } else {
                         e[c] = entry[idx];
                     }
