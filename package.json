@@ -1,5 +1,5 @@
 {
-  "name": "search-food-calories",
+  "name": "search-food-server",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
