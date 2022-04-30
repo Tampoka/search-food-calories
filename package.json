@@ -15,10 +15,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "babel-node start-server.js",
+    "client": "babel-node start-client.js"
   },
   "eslintConfig": {
     "extends": [
