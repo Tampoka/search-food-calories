@@ -3,7 +3,7 @@ import s from './SelectedFoods.module.scss'
 
 const SelectedFoods = (props) => {
     return (
-        <table className={s.table}>
+        <table className={s.selectedTable}>
             <thead>
             <tr>
                 <th colSpan='5'>

@@ -1,0 +1,26 @@
+.searchContainer {
+  .searchTable {
+    .searchField {
+      position: relative;
+      text-align: left;
+      margin-top: 15px;
+
+      .prompt {
+        height: 26px;
+        width: 200px;
+        padding-right: 24px;
+      }
+
+      .searchIcon {
+        position: absolute;
+        padding: 8px;
+        left: 200px;
+      }
+
+    }
+
+    i.removeIcon {
+
+    }
+  }
+}
