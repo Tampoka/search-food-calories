@@ -1,3 +1,9 @@
-.selectedTable{
-  border: 1px solid red;
+.selectedTable {
+  border: 1px solid #e5e9ee;
+  border-collapse: collapse;
+
+  td,th {
+    padding: 5px;
+    border: 1px solid #e5e9ee;
+  }
 }

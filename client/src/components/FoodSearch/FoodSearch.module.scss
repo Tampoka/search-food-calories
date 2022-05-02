@@ -1,5 +1,14 @@
 .searchContainer {
   .searchTable {
+    border-collapse: collapse;
+
+    td,th {
+      padding: 5px;
+      border: 1px solid #e5e9ee;
+    }
+    .searchCell{
+      border: none;
+    }
     .searchField {
       position: relative;
       text-align: left;
@@ -8,13 +17,16 @@
       .prompt {
         height: 26px;
         width: 200px;
-        padding-right: 24px;
+        padding: 5px 24px 5px 10px;
+        outline: none;
+        border: 1px solid #8ca8d0;
+        border-radius: 14px;
       }
 
       .searchIcon {
         position: absolute;
-        padding: 8px;
-        left: 200px;
+        padding: 12px;
+        left: 205px;
       }
 
     }

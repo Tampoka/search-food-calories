@@ -51,7 +51,7 @@ class FoodSearch extends Component {
                 <table className={s.searchTable}>
                     <thead>
                     <tr>
-                        <th colSpan='5'>
+                        <th colSpan='5' className={s.searchCell}>
                             <div className={s.searchField}>
                                 <i className={s.searchIcon}><FaSearch/></i>
                                 <input
