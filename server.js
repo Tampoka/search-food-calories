@@ -1,10 +1,12 @@
 const express = require('express');
 const fs = require('fs');
-const sqlite = require('sql.js');
+const initSqlJs = require('sql.js');
+// const sqlite = require('sql.js');
 
 const filebuffer = fs.readFileSync('db/usda-nnd.sqlite3');
-
-const db = new sqlite.Database(filebuffer);
+initSqlJs().then(function(SQL){
+    const db = new SQL.Database(filebuffer);
+})
 
 const app = express();
 
@@ -46,8 +48,8 @@ app.get('/api/food', (req, res) => {
                     if (c.match(/^fa_/)) {
                         e.fat_g = e.fat_g || 0.0;
                         e.fat_g = parseFloat((
-                            parseFloat(e.fat_g, 10) + parseFloat(entry[idx], 10)
-                        ).toFixed(2), 10)
+                            parseFloat(e.fat_g) + parseFloat(entry[idx])
+                        ).toFixed(2))
                     } else {
                         e[c] = entry[idx];
                     }

@@ -29,12 +29,6 @@
     "server": "babel-node start-server.js",
     "client": "babel-node start-client.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
