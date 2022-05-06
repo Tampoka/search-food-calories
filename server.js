@@ -1,12 +1,10 @@
 const express = require('express');
 const fs = require('fs');
-const initSqlJs = require('sql.js');
-// const sqlite = require('sql.js');
+const sqlite = require('sql.js');
 
 const filebuffer = fs.readFileSync('db/usda-nnd.sqlite3');
-initSqlJs().then(function(SQL){
-    const db = new SQL.Database(filebuffer);
-})
+
+const db = new sqlite.Database(filebuffer);
 
 const app = express();
 
